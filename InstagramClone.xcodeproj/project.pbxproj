@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B1B0D552476BB8100DE4783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D542476BB8100DE4783 /* AppDelegate.swift */; };
+		6B1B0D572476BB8100DE4783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D562476BB8100DE4783 /* SceneDelegate.swift */; };
+		6B1B0D5C2476BB8100DE4783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B0D5A2476BB8100DE4783 /* Main.storyboard */; };
+		6B1B0D5E2476BB8200DE4783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B0D5D2476BB8200DE4783 /* Assets.xcassets */; };
+		6B1B0D612476BB8200DE4783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B0D5F2476BB8200DE4783 /* LaunchScreen.storyboard */; };
+		6B1B0D6C2476BC4A00DE4783 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D6B2476BC4A00DE4783 /* LoginVC.swift */; };
+		6B1B0D702476BE7900DE4783 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D6F2476BE7900DE4783 /* Extension.swift */; };
+		6B1B0D722476D6AE00DE4783 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D712476D6AE00DE4783 /* SignUpVC.swift */; };
+		6B1B0D742476E0FF00DE4783 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B0D732476E0FF00DE4783 /* GoogleService-Info.plist */; };
+		6B1B0D762479655600DE4783 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D752479655600DE4783 /* MainTabVC.swift */; };
+		6B1B0D782479671C00DE4783 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D772479671C00DE4783 /* FeedVC.swift */; };
+		6B1B0D7A2479672F00DE4783 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D792479672F00DE4783 /* SearchVC.swift */; };
+		6B1B0D7C2479675600DE4783 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D7B2479675600DE4783 /* PostVC.swift */; };
+		6B1B0D7E2479679300DE4783 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D7D2479679300DE4783 /* NotificationVC.swift */; };
+		6B1B0D80247967AC00DE4783 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D7F247967AC00DE4783 /* ProfileVC.swift */; };
+		6B1B0D84247C1E0100DE4783 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D83247C1E0100DE4783 /* ProfileHeader.swift */; };
+		6B1B0D86247CAA3900DE4783 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D85247CAA3900DE4783 /* User.swift */; };
+		6B1B0D88247D0E1800DE4783 /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B0D87247D0E1800DE4783 /* SearchUserCell.swift */; };
+		A193D0CA5BA1D3B79CF6D0E5 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859743D3899DEDC41A141C96 /* Pods_InstagramClone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B1B0D512476BB8100DE4783 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1B0D542476BB8100DE4783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B1B0D562476BB8100DE4783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6B1B0D5B2476BB8100DE4783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B1B0D5D2476BB8200DE4783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B1B0D602476BB8200DE4783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B1B0D622476BB8200DE4783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1B0D6B2476BC4A00DE4783 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6B1B0D6F2476BE7900DE4783 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		6B1B0D712476D6AE00DE4783 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		6B1B0D732476E0FF00DE4783 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6B1B0D752479655600DE4783 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
+		6B1B0D772479671C00DE4783 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		6B1B0D792479672F00DE4783 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		6B1B0D7B2479675600DE4783 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		6B1B0D7D2479679300DE4783 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		6B1B0D7F247967AC00DE4783 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		6B1B0D83247C1E0100DE4783 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		6B1B0D85247CAA3900DE4783 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6B1B0D87247D0E1800DE4783 /* SearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
+		72B741E60E58A392D1C5DEED /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
+		859743D3899DEDC41A141C96 /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBAC83DDF1D6BD06E5171B2 /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.debug.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B1B0D4E2476BB8100DE4783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A193D0CA5BA1D3B79CF6D0E5 /* Pods_InstagramClone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B1B0D482476BB8100DE4783 = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D532476BB8100DE4783 /* InstagramClone */,
+				6B1B0D522476BB8100DE4783 /* Products */,
+				92E45574903C1F90F0D11AF5 /* Pods */,
+				7691951EB548CC92AE64AB57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B1B0D522476BB8100DE4783 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D512476BB8100DE4783 /* InstagramClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1B0D532476BB8100DE4783 /* InstagramClone */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D6E2476BE6C00DE4783 /* Utils */,
+				6B1B0D6D2476BC6300DE4783 /* Supporting Files */,
+				6B1B0D692476BBC200DE4783 /* View */,
+				6B1B0D6A2476BBC600DE4783 /* Controller */,
+				6B1B0D682476BBBB00DE4783 /* Model */,
+				6B1B0D5D2476BB8200DE4783 /* Assets.xcassets */,
+				6B1B0D622476BB8200DE4783 /* Info.plist */,
+				6B1B0D732476E0FF00DE4783 /* GoogleService-Info.plist */,
+			);
+			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		6B1B0D682476BBBB00DE4783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D85247CAA3900DE4783 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B1B0D692476BBC200DE4783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D83247C1E0100DE4783 /* ProfileHeader.swift */,
+				6B1B0D87247D0E1800DE4783 /* SearchUserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B1B0D6A2476BBC600DE4783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D6B2476BC4A00DE4783 /* LoginVC.swift */,
+				6B1B0D712476D6AE00DE4783 /* SignUpVC.swift */,
+				6B1B0D752479655600DE4783 /* MainTabVC.swift */,
+				6B1B0D8124796F8900DE4783 /* Feed */,
+				6B1B0D89247D11ED00DE4783 /* Search */,
+				6B1B0D7B2479675600DE4783 /* PostVC.swift */,
+				6B1B0D7D2479679300DE4783 /* NotificationVC.swift */,
+				6B1B0D82247B926700DE4783 /* Profile */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6B1B0D6D2476BC6300DE4783 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D542476BB8100DE4783 /* AppDelegate.swift */,
+				6B1B0D562476BB8100DE4783 /* SceneDelegate.swift */,
+				6B1B0D5A2476BB8100DE4783 /* Main.storyboard */,
+				6B1B0D5F2476BB8200DE4783 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B1B0D6E2476BE6C00DE4783 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D6F2476BE7900DE4783 /* Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6B1B0D8124796F8900DE4783 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D772479671C00DE4783 /* FeedVC.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		6B1B0D82247B926700DE4783 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D7F247967AC00DE4783 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6B1B0D89247D11ED00DE4783 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B0D792479672F00DE4783 /* SearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7691951EB548CC92AE64AB57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				859743D3899DEDC41A141C96 /* Pods_InstagramClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92E45574903C1F90F0D11AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEBAC83DDF1D6BD06E5171B2 /* Pods-InstagramClone.debug.xcconfig */,
+				72B741E60E58A392D1C5DEED /* Pods-InstagramClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B1B0D502476BB8100DE4783 /* InstagramClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1B0D652476BB8200DE4783 /* Build configuration list for PBXNativeTarget "InstagramClone" */;
+			buildPhases = (
+				56FBAEF7454E18DCD36061B3 /* [CP] Check Pods Manifest.lock */,
+				6B1B0D4D2476BB8100DE4783 /* Sources */,
+				6B1B0D4E2476BB8100DE4783 /* Frameworks */,
+				6B1B0D4F2476BB8100DE4783 /* Resources */,
+				C20B9F5BDC88566B40F02F5E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstagramClone;
+			productName = InstagramClone;
+			productReference = 6B1B0D512476BB8100DE4783 /* InstagramClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B1B0D492476BB8100DE4783 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Nguyen Trung Kien";
+				TargetAttributes = {
+					6B1B0D502476BB8100DE4783 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B1B0D4C2476BB8100DE4783 /* Build configuration list for PBXProject "InstagramClone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B1B0D482476BB8100DE4783;
+			productRefGroup = 6B1B0D522476BB8100DE4783 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B1B0D502476BB8100DE4783 /* InstagramClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B1B0D4F2476BB8100DE4783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B0D612476BB8200DE4783 /* LaunchScreen.storyboard in Resources */,
+				6B1B0D5E2476BB8200DE4783 /* Assets.xcassets in Resources */,
+				6B1B0D742476E0FF00DE4783 /* GoogleService-Info.plist in Resources */,
+				6B1B0D5C2476BB8100DE4783 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56FBAEF7454E18DCD36061B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstagramClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20B9F5BDC88566B40F02F5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B1B0D4D2476BB8100DE4783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B0D88247D0E1800DE4783 /* SearchUserCell.swift in Sources */,
+				6B1B0D86247CAA3900DE4783 /* User.swift in Sources */,
+				6B1B0D7A2479672F00DE4783 /* SearchVC.swift in Sources */,
+				6B1B0D7E2479679300DE4783 /* NotificationVC.swift in Sources */,
+				6B1B0D552476BB8100DE4783 /* AppDelegate.swift in Sources */,
+				6B1B0D782479671C00DE4783 /* FeedVC.swift in Sources */,
+				6B1B0D762479655600DE4783 /* MainTabVC.swift in Sources */,
+				6B1B0D572476BB8100DE4783 /* SceneDelegate.swift in Sources */,
+				6B1B0D6C2476BC4A00DE4783 /* LoginVC.swift in Sources */,
+				6B1B0D7C2479675600DE4783 /* PostVC.swift in Sources */,
+				6B1B0D84247C1E0100DE4783 /* ProfileHeader.swift in Sources */,
+				6B1B0D722476D6AE00DE4783 /* SignUpVC.swift in Sources */,
+				6B1B0D80247967AC00DE4783 /* ProfileVC.swift in Sources */,
+				6B1B0D702476BE7900DE4783 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B1B0D5A2476BB8100DE4783 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B0D5B2476BB8100DE4783 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B1B0D5F2476BB8200DE4783 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B0D602476BB8200DE4783 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B1B0D632476BB8200DE4783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B1B0D642476BB8200DE4783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B1B0D662476BB8200DE4783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBAC83DDF1D6BD06E5171B2 /* Pods-InstagramClone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ5Y3KQPV8;
+				INFOPLIST_FILE = InstagramClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.app.InstagramClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6B1B0D672476BB8200DE4783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B741E60E58A392D1C5DEED /* Pods-InstagramClone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ5Y3KQPV8;
+				INFOPLIST_FILE = InstagramClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.app.InstagramClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B1B0D4C2476BB8100DE4783 /* Build configuration list for PBXProject "InstagramClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B0D632476BB8200DE4783 /* Debug */,
+				6B1B0D642476BB8200DE4783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B1B0D652476BB8200DE4783 /* Build configuration list for PBXNativeTarget "InstagramClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B0D662476BB8200DE4783 /* Debug */,
+				6B1B0D672476BB8200DE4783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B1B0D492476BB8100DE4783 /* Project object */;
+}
