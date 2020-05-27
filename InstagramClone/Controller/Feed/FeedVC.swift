@@ -20,8 +20,6 @@ class FeedVC: UICollectionViewController {
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        configLogoutButton()
     }
 
     // MARK: UICollectionViewDataSource
@@ -45,36 +43,7 @@ class FeedVC: UICollectionViewController {
         return cell
     }
     
-    // MARK: - Handle
-    func configLogoutButton() {
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutPressed))
-    }
     
-    @objc func logoutPressed() {
-        
-        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        
-        let logoutAction = UIAlertAction(title: "Log Out", style: .destructive) { (action) in
-            do {
-                try Auth.auth().signOut()
-                
-                let loginVC = LoginVC()
-                loginVC.modalPresentationStyle = .fullScreen
-                let navController = UINavigationController(rootViewController: loginVC)
-                self.present(navController, animated: true, completion: nil)
-                print("logout success")
-            } catch {
-                print("error logout")
-            }
-        }
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        
-        alertController.addAction(logoutAction)
-        alertController.addAction(cancelAction)
-        
-        present(alertController, animated: true, completion: nil)
-    }
 
     
 

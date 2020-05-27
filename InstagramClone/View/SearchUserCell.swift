@@ -10,6 +10,14 @@ import UIKit
 
 class SearchUserCell: UITableViewCell {
     
+    var user: User? {
+        didSet {
+            profileImage.loadImage(with: (user?.profileImageUrl)!)
+            textLabel?.text = user?.name
+            detailTextLabel?.text = user?.username
+        }
+    }
+    
     let profileImage: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
@@ -40,7 +48,18 @@ class SearchUserCell: UITableViewCell {
         
         self.textLabel?.text = "Username"
         self.detailTextLabel?.text = "full name"
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
+        //set label frame
+        textLabel?.frame = CGRect(x: 68, y: (textLabel?.frame.origin.y)! - 2, width: (textLabel?.frame.width)!, height: (textLabel?.frame.height)!)
+        textLabel?.font = UIFont.boldSystemFont(ofSize: 12)
+        
+        detailTextLabel?.frame = CGRect(x: 68, y: (detailTextLabel?.frame.origin.y)! - 2, width: frame.width - 108, height: (detailTextLabel?.frame.height)!)
+        detailTextLabel?.font = UIFont.systemFont(ofSize: 12)
+        detailTextLabel?.textColor = UIColor.lightGray
     }
     
     required init?(coder: NSCoder) {

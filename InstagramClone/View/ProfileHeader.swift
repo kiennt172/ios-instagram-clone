@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileHeader: UICollectionViewCell {
     
     var user: User? {
         didSet {
+            
+            checkUser()
             let fullName = user?.name
             nameLabel.text = fullName
             
@@ -24,6 +27,8 @@ class ProfileHeader: UICollectionViewCell {
         image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
         image.backgroundColor = .lightGray
+        image.layer.borderColor = UIColor.black.cgColor
+        image.layer.borderWidth = 1
         return image
     }()
     
@@ -81,6 +86,28 @@ class ProfileHeader: UICollectionViewCell {
         return btn
     }()
     
+    let followButton: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setTitle("Follow", for: .normal)
+        btn.setTitleColor(UIColor.white, for: .normal)
+        btn.backgroundColor = UIColor.blue
+        btn.layer.cornerRadius = 5
+        btn.layer.borderColor = UIColor.lightGray.cgColor
+        btn.layer.borderWidth = 0.5
+        return btn
+    }()
+    
+    let messageButton: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setTitle("Message", for: .normal)
+        btn.setTitleColor(.black, for: .normal)
+        btn.backgroundColor = UIColor.white
+        btn.layer.cornerRadius = 5
+        btn.layer.borderColor = UIColor.lightGray.cgColor
+        btn.layer.borderWidth = 0.5
+        return btn
+    }()
+    
     let gridButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.setImage(UIImage(named: "grid"), for: .normal)
@@ -110,14 +137,11 @@ class ProfileHeader: UICollectionViewCell {
         profileImage.anchor(top: topAnchor, right: nil, bottom: nil, left: leftAnchor, paddingTop: 10, paddingRight: 0, paddingBottom: 0, paddingLeft: 20, width: 80, height: 80)
         profileImage.layer.cornerRadius = 80 / 2
         
+        
         addSubview(nameLabel)
         nameLabel.anchor(top: profileImage.bottomAnchor, right: rightAnchor, bottom: nil, left: leftAnchor, paddingTop: 10, paddingRight: 20, paddingBottom: 0, paddingLeft: 20, width: 0, height: 0)
         
         configUserStats()
-        
-        addSubview(editProfileButton)
-        editProfileButton.anchor(top: nameLabel.bottomAnchor, right: rightAnchor, bottom: nil, left: leftAnchor, paddingTop: 10, paddingRight: 20, paddingBottom: 0, paddingLeft: 20, width: 0, height: 30)
-        
         configButtonToolbar()
     }
     
@@ -156,6 +180,36 @@ class ProfileHeader: UICollectionViewCell {
         addSubview(bottomDivider)
         bottomDivider.anchor(top: nil, right: rightAnchor, bottom: stackView.bottomAnchor, left: leftAnchor, paddingTop: 0, paddingRight: 0, paddingBottom: 0, paddingLeft: 0, width: 0, height: 0.5)
     }
+    
+    func configOtherUserButton() {
+        
+        let stackView = UIStackView(arrangedSubviews: [followButton, messageButton])
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        stackView.spacing = 20
+        
+        addSubview(stackView)
+        stackView.anchor(top: nameLabel.bottomAnchor, right: rightAnchor, bottom: nil, left: leftAnchor, paddingTop: 10, paddingRight: 20, paddingBottom: 0, paddingLeft: 20, width: 0, height: 30)
+    }
+    
+    func checkUser() {
+        print("zz")
+        guard let currentUid = Auth.auth().currentUser?.uid else { return }
+        guard let user = self.user else { return }
+        
+        print("check user")
+        if currentUid == user.uid {
+            //show profile button
+            addSubview(editProfileButton)
+            editProfileButton.anchor(top: nameLabel.bottomAnchor, right: rightAnchor, bottom: nil, left: leftAnchor, paddingTop: 10, paddingRight: 20, paddingBottom: 0, paddingLeft: 20, width: 0, height: 30)
+            
+        } else {
+            //show follow button
+            configOtherUserButton()
+        }
+    }
+    
+    
     
     
 }
